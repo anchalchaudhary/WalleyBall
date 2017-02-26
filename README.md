@@ -10,20 +10,14 @@ Make sure you have `npm` installed beforehand
 
 Clone this repository 
 
-    ```shell
-    git clone https://github.com/Software-Incubator/WalleyBall.git
-    ```
+`git clone https://github.com/Software-Incubator/WalleyBall.git`
 
 Switch to App directory
 
-    ```shell
-    cd WalleyBall
-    ```
+`cd WalleyBall`
 
 Spin your App
 
-    ```shell
-    npm start
-    ```
+`npm start`
     
 Visit `http://localhost:3000` to see your app spinning
