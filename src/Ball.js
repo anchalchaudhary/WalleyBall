@@ -11,6 +11,7 @@ export default class Ball
         this.ballbody.restitution = 1;
         this.ballbody.friction = 0;
         this.ballbody.frictionAir = 0;
+        this.ballbody.label = "DragonBall";
     }
 
     changeColour(colour)
