@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Walley from './Walley';
 import './index.css';
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+    <Walley />,
+    document.getElementById('root')
 );
