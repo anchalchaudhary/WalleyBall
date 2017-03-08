@@ -8,6 +8,10 @@ const World = Matter.World;
 const Engine = Matter.Engine;
 const Renderer = Matter.Render;
 const Bodies = Matter.Bodies;
+const Runner = Matter.Runner;
+const MouseConstraint = Matter.MouseConstraint;
+const Mouse = Matter.Mouse;
+const Events = Matter.Events;
 
 class Walley extends Component
 {
@@ -27,10 +31,11 @@ class Walley extends Component
 
         this.renderer = Renderer.create(
             {
-                element: document.getElementById('root'),
+                element: document.body,
                 engine: this.engine,
                 options:
                     {
+                        hasBounds: true,
                         width: window.innerWidth,
                         height: window.innerHeight,
                         background: 'black',
@@ -63,8 +68,6 @@ class Walley extends Component
         ];
 
         this.world.add(this.engine.world, basic_elements);
-
-        Engine.run(this.engine);
         Renderer.run(this.renderer);
     }
 
@@ -78,6 +81,7 @@ class Walley extends Component
 
     render()
     {
+        Engine.run(this.engine);
         this.startGame();
     }
 }
